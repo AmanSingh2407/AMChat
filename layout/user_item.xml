@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="14dp"
+    android:background="@drawable/bordermain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimg"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/photocamera" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_gravity="center">
+
+         <TextView
+             android:id="@+id/username"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/poppins_bold"
+             android:text="Name"
+             android:textColor="@color/black"
+             android:textSize="32sp" />
+
+         <TextView
+             android:id="@+id/userstatus"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="@font/poppins_regular"
+             android:text="Status"
+             android:textColor="@color/black"
+             android:textSize="19sp" />
+
+     </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

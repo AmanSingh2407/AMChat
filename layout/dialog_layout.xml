@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="325dp"
+    android:layout_height="254dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="12dp"
+    android:background="@drawable/shapedialog">
+
+    <ImageView
+        android:id="@+id/logoutdia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logout"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Do you really want to \n log out?"
+        android:textSize="27sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nobtn"
+            android:layout_width="130dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="No"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/yesbtn"
+            android:layout_width="130dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Yes"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

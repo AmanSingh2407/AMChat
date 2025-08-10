@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatback"
+    tools:context=".chatWin">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilechatt"
+            android:layout_width="137dp"
+            android:layout_height="119dp"
+            android:layout_marginTop="42dp"
+            android:layout_gravity="center"
+            android:src="@drawable/photocamera"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.553"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.212" />
+
+        <TextView
+            android:id="@+id/recivernamee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SinghBrothers"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="19sp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgadpter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="218dp"
+        android:layout_marginBottom="26dp"
+        android:padding="12.00dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="26dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:cardCornerRadius="30dp">
+
+
+            <EditText
+                android:id="@+id/textmsg"
+                android:layout_width="345dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Typing..."
+                android:paddingStart="30dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sendbtnn"
+            android:layout_width="120dp"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="26dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:cardCornerRadius="30dp">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sendbut"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
